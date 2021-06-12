@@ -1,2 +1,76 @@
-GIT
+GIT - Creado por la fundacion que hace linux
+
+CLASE 1
+
+$git init
+Inicia en mi carpeta un repositorio
+Es como la base de datos donde se van a a guardar los cambios de cualquier archivo
+
+$git add <nombre del archivo> (staging)
+Esto es para que el repositorio que cree anteriormente sepa que el archivo existe
+
+$git commig -m "Version 1"
+Esto envia los ultimos cambios del archivo a la base de datos del sistema de control de versiones
+
+
+-- A esta altura tengo guardada mi primer version
+
+-- Luego de realizar cambios puedo volver a agregar el archivo
+
+
+$git add . ó <nombre del archivo>
+Puedo usar punto para que agregue todo lo que cambio en el proyecto
+
+$git commit -m "Cambios realizados a la v1"
+Esto es para guardar los cambios en la "base de datos"
+
+$git status
+Esto sirve para ver el estatus de la base de datos en comparacion a los archivos que estoy trabajando
+
+$git show
+Muestra todos los cambios historicos hechos, incluyendo lineas de codigo, texto o cualquier archivo.
+Cuando se realizaron los cambios y quien los hizo.
+
+$git log <nombre del archivo>
+Conocer la historia entera de un archivo
+
+$git push
+Enviar hacia otro repositorio remoto lo que estoy haciendo
+
+$git pull
+Traer todos los cambios de un repositorio remoto
+
+------------------------------
+
+CLASE 2
+
+En git podremos editar texto plano. Lo que podemos modificar y guardar como version es texto plano.
+Git permite guardar archivos binarios pero no es tan preciso
+
+ls -la Muestra archivos listados + los ocultos
+history Muestra todos los comandos que hice
+!numreo de comando
+
+$git rm --cached <nombre del archivo>
+Revierto el git add
+
+$git add . (Queadan los archivos en el limbo, staging)
+
+-------------------------------------
+
+CONFIGURAR GIT
+
+$git config
+Veo todas las configuraciones que tiene
+
+$git config --list
+Muestra la configuracion por defecto de git
+
+$git config --list --show-origin
+Muestra donde estan las configuraciones guardadas
+
+$git config --global user.name "Diego Fagundez"
+Voy a indiciar el usuario global de git
+
+$git config --global user.email "correo@corre.com"
 
